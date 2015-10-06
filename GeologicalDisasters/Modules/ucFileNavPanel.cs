@@ -16,7 +16,7 @@ using DevExpress.XtraTreeList.ViewInfo;
 using DevExpress.XtraTreeList.Nodes;
 using DevExpress.XtraEditors;
 
-using CommonHandler;
+
 
 namespace GeologicalDisasters.Modules
 {
@@ -123,7 +123,7 @@ namespace GeologicalDisasters.Modules
             this.dateEdit1.DateTime = date;
             
 
-            dataTable = CommonHandler.LocalFiles.getDataTable(path,this.check_DateFilter.Checked,date);
+            //dataTable = CommonHandler.LocalFiles.getDataTable(path,this.check_DateFilter.Checked,date);
             if (dataTable == null)
             {
                 return;
